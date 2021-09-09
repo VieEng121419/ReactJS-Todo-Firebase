@@ -1,0 +1,27 @@
+.project-delete-modal {
+  position: relative;
+  top: 10px;
+  &__inner {
+    @include box-overlay();
+    z-index: 99;
+    width: 200px;
+    padding: 10px;
+    top: 10px;
+    right: 0;
+    background-color: #fff;
+    p {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      line-height: normal;
+      font-weight: normal;
+      font-size: 15px;
+    }
+    button {
+      @include btn(70px);
+    }
+    span {
+      @include cancel();
+      font-weight: normal;
+    }
+  }
+}
